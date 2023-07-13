@@ -8656,7 +8656,7 @@ const de = (H) => ({
       arguments: {
         MESSAGE: {
           type: Jt.STRING,
-          defaultValue: "Hello, World!"
+          defaultValue: "ありがとう!"
         }
       }
     },
