@@ -8535,7 +8535,7 @@ class Kt {
   getInfo() {
     return {
       id: "comm",
-      name: "Comm",
+      name: "双方向通信",
       color1: "#a0a0a0",
       color2: "#808080",
       color3: "#606060",
@@ -8555,7 +8555,6 @@ const Yt = {
   featured: !0,
   internetConnectionRequired: !0
 };
-Scratch.extensions.register(new Kt());
 export {
   Kt as blockClass,
   Yt as entry
