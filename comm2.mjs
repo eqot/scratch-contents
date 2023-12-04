@@ -8066,7 +8066,7 @@ const Ut = /* @__PURE__ */ Ct(Nt), dt = class dt {
   }
   tick() {
     return new Promise((V) => {
-      this.checkTimer ? (clearTimeout(this.checkTimer), this.duration *= dt.DURATION_SCALE) : this.duration = dt.INITIAL_DURATION, console.log(">", this.duration), this.checkTimer = setTimeout(() => {
+      this.checkTimer ? (clearTimeout(this.checkTimer), this.duration *= dt.DURATION_SCALE) : this.duration = dt.INITIAL_DURATION, this.checkTimer = setTimeout(() => {
         this.checkTimer = null;
       }, this.duration + dt.CHECK_DURATION), this.waitTimer = setTimeout(() => {
         this.waitTimer = null, V();
@@ -8075,7 +8075,7 @@ const Ut = /* @__PURE__ */ Ct(Nt), dt = class dt {
   }
   showRate() {
     this.timer ? this.counter++ : (this.counter = 1, this.timer = setTimeout(() => {
-      this.timer = null, console.log(this.counter);
+      this.timer = null, console.info(this.counter);
     }, 1e3));
   }
 };
